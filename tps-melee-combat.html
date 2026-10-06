@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Third Person Melee Combat | Uphendhra Nagarajan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+  <canvas class="binary-rain left" aria-hidden="true"></canvas>
+  <canvas class="binary-rain right" aria-hidden="true"></canvas>
+
+  <header class="navbar">
+
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html" aria-label="Upi"><span style="--i:0">U</span><span style="--i:1">p</span><span style="--i:2">i</span><span class="brand-dot" style="--i:3">.</span></a>
+
+      <button
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+
+      <nav
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Games</a>
+        <a href="index.html#engine">Custom Engine</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contact">Contact</a>
+
+        <a
+          href="#"
+          class="resume-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main class="subpage-main">
+
+    <section class="projects" id="tps-melee-combat">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <a class="detail-back" href="games.html">&larr; All Unity Games</a>
+
+          <div class="section-label">
+            Unity Project
+          </div>
+
+          <h2 class="section-title">
+            Third Person Melee Combat
+          </h2>
+
+          <div class="tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Combat Systems</span>
+            <span class="tag">ScriptableObjects</span>
+            <span class="tag">Editor Tooling</span>
+            <span class="tag">Work in Progress</span>
+          </div>
+
+          <!-- Replace with your video embed when ready -->
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/0VGvbofPkG4" title="PO-P-rotect video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+        </div>
+
+
+        <div class="detail-body reveal">
+
+            <h3>Overview</h3>
+
+            <p>
+                This is a Work In Progress modular third-person melee combat framework built around a
+                single animator state. Combos, weapon switching, hit detection
+                and animation events are all driven by code, with no transition
+                webs and no animator parameters.
+            </p>
+
+            <h3>Combo and weapon system</h3>
+
+            <p>
+                Combos are a list of ScriptableObject weapon entries, with a
+                lunge toward the closest enemy and an automatic reset after idle
+                time.
+            </p>
+
+            <!-- Add more detail here: how weapon entries are structured,
+    how the lunge picks a target, how hit detection works... -->
+
+            <h3>Custom animation event tool</h3>
+
+            <p>
+                Inspired by Unreal Engine's Notify system, events live in a
+                ScriptableObject, separate from the clip, and are edited on a
+                visual timeline inside the Unity inspector.
+
+            </p>
+
+            <p>
+                What you can do:
+                <ul>
+                    <li> Add a Notify — fires once at a single point in your animation timeline</li>
+                    <li>Add a Notify State — active across a duration with begin, tick, and end callbacks</li>
+                    <li>ScriptableObject based — event logic and timing live separately from the animation clip</li>
+                    <li>Assign unique logic to each event</li>
+                    <li>Color code, Place and Name each event for clarity in the timeline </li>
+                </ul>
+
+            </p>
+
+            <!-- Add more detail here: why events are separate from clips,
+    how the timeline editor was built... -->
+
+            <h3>Screenshots</h3>
+
+            <!-- Replace each placeholder with:
+    <div class="detail-shot"><img src="assets/tps/your-image.png" alt="Description"></div> -->
+            <div class="detail-shots">
+                <div class="detail-shot"><img src="assets/1.png" alt="Description"></div>
+                <div class="detail-shot"><img src="assets/2.png" alt="Description"></div>
+                <div class="detail-shot"><img src="assets/3.png" alt="Description"></div>
+                <div class="detail-shot"><img src="assets/4.png" alt="Description"></div>
+            </div>
+
+            <h3>What's Coming Next</h3>
+            <ul>
+                <li>Behavior Trees for AI enemies and Boss fights</li>
+                <li>Level Desgin to make the scene more lively and realistic</li>
+                <li>Unique Debuff System for Weapons</li>
+
+            </ul>
+
+            <h3>Links</h3>
+
+            <div class="detail-links">
+                <a class="view-more-btn"
+                   href="https://github.com/Uphendra05/TPS-Melee-Combat"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+
+
+            </div>
+
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Uphendhra Nagarajan.
+      All rights reserved.
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

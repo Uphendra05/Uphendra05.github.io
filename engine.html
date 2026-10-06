@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Ishtar Engine | Uphendhra Nagarajan</title>
+
+
+  <!-- =====================================================
+       FONTS
+  ====================================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =====================================================
+       FONT AWESOME
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+  <canvas class="binary-rain left" aria-hidden="true"></canvas>
+  <canvas class="binary-rain right" aria-hidden="true"></canvas>
+
+    <header class="navbar">
+
+    <div class="container nav-inner">
+
+      <a class="brand" href="index.html" aria-label="Upi"><span style="--i:0">U</span><span style="--i:1">p</span><span style="--i:2">i</span><span class="brand-dot" style="--i:3">.</span></a>
+
+      <button
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+
+
+      <nav
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a href="index.html#about">
+          About
+        </a>
+
+        <a href="index.html#projects">
+          Games
+        </a>
+
+        <a href="index.html#engine">
+          Custom Engine
+        </a>
+
+        <a href="blog.html">
+          Blog
+        </a>
+
+
+        <a href="index.html#contact">
+          Contact
+        </a>
+
+        <a
+          href="#"
+          class="resume-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+    <main class="subpage-main">
+<section
+      class="engine"
+      id="engine-details"
+    >
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="section-label">
+                Custom Engine
+            </div>
+
+
+            <h2 class="section-title">
+                Engine Programming
+            </h2>
+
+
+            <p class="engine-intro">
+                Engine Programming is something I consider one of the difficult part in game development, because making a game engine that is well optimized and well maintained to have it in a production level is something unique. My Ishtar Engine allows me to develop games or interactive applications, learn more from below.
+            </p>
+
+
+            <div class="title-row sub">
+                <h3 class="ishtar-title">
+                    What is Ishtar Engine ?
+                </h3>
+                <a class="view-more-btn"
+                   href="https://github.com/Uphendra05/Ishtar-Engine"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View on GitHub &rarr;
+                </a>
+            </div>
+
+            <br />
+            <p class="engine-intro ishtar-description">
+                Ishtar Engine is a Game Engine made using C++ and OpenGL, which can be used to create interactive applications, well technically video games. To put it straight Ishtar engine has capabilities of creating a game with some technical features a game has to offer. Below you can have full detailed review of what my engine can achieve and it is obviously not the extent my engine can achieve.
+            </p>
+            <div class="ishtar-video">
+                <video src="assets/Ishtar.mp4"
+                       autoplay
+                       muted
+                       loop
+                       playsinline
+                       controls
+                       preload="auto"></video>
+            </div>
+        </div>
+
+        <div class="tabs">
+
+            <button class="tab-button active"
+                    data-tab="graphics">
+                Graphics
+            </button>
+
+
+            <button class="tab-button"
+                    data-tab="physics">
+                Physics
+            </button>
+
+
+            <button class="tab-button"
+                    data-tab="other">
+                Other Projects
+            </button>
+
+        </div>
+
+
+
+        <!-- GRAPHICS -->
+
+        <div class="tab-content active"
+             id="graphics">
+
+            <div class="technical-grid">
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/GNMW1zGptBs"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Off Screen Rendering
+                        </h3>
+
+                        <p>
+                            Rendering the scene to a Framebuffer and binding the Framebuffer to a Texture of the image inside imGUI to give us the result of rendering a screen on an editor. I'm using two different cameras to render two different scenes on two different textures. Each camera has its own framebuffer.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/q6aeDz3NcaY"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Frustrum Culling
+                        </h3>
+
+                        <p>
+                            Frustrum Culling is one of the major technical aspect in a video game. It steps in to optimize the scene by identifying what the camera view is seeing and culling all other objects that are not in the camera's view
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/TGhqySynTko"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Mesh Instancing
+                        </h3>
+
+                        <p>
+                            Mesh instancing is one of the graphics techniques implemented in Ishtar Engine to efficiently render repeated meshes.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/FYcmwXwoLn0"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Post Processing
+                        </h3>
+
+                        <p>
+                            Adding a secondary effect on top of the framebuffer which is currently bounded to a camera. You can Achieve these effects by creating a effect in shader for example Chromatic Aberration and binding the texture sampler 2D uniform to a quad and rendering the quad on top of the framebuffer.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/QpOuE29oOBc"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            LOD or Level Of Detail
+                        </h3>
+
+                        <p>
+                            Level Of Detail is a technical aspect every game uses nowadays. It is basically replacing number of meshes depending upon the distance of the game camera. The closer the game camera is the mesh with more vertices and polycount renders and the more far away from the object the mesh with least vertices and polycount renders. Sometimes we can even disable the model to save us from drawing every time in the scene.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/CkKYGde267s"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Skeletal Animation
+                        </h3>
+
+                        <p>
+                            Skeletal Animation is a vast concept so I'm gonna try explaining it as brief as possible. First you load the 3D model as usual but while loading you make sure you generate bone hierarchy and store it to a bone node. This bone node is a struct that has all the information like transform and children data etcetera. Now you want to process the mesh meaning process all the vertices, indices and texture data. While doing that you have to extract the bone weight info for vertices.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/4CptdKa76tE"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Shadows
+                        </h3>
+
+                        <p>
+                            Shadows are the beauty of the game. For now my shadow is still work in progress and I've used the classic method of binding a depth buffer and drawing the scene from lights perspective and everything the light sees is not the shadow and everything the light can't see is the shadow.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/B_SCgavwKLc"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Interior Mapping
+                        </h3>
+
+                        <p>
+                            Interior mapping creates the illusion of 3D rooms on flat surfaces by simulating a ray from the camera passing through a virtual cube behind the surface. In the shader, we calculate where this ray would hit the far side of the cube, then sample a cubemap using the direction from the cube’s center to that hit point. This gives each window a dynamic, perspective-correct view of an interior, without needing actual 3D geometry.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/8bYOhDqyfIA"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Deferred Rendering and Content Browser
+                        </h3>
+
+                        <p>
+                            Deferred rendering was implemented by splitting rendering into multiple passes: the geometry pass stores per-pixel data like positions, normals, albedo, and specular in the G-buffer; the lighting pass then uses this data to compute lighting in screen space via a full-screen quad. I'm using Uniform Buffer Objects (UBOs) to efficiently send light data to the shader, allowing support for a large number of dynamic lights.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHYSICS --> 
+
+        <div class="tab-content"
+             id="physics">
+
+            <div class="technical-grid">
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/O6KIfoBfDIE"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            PhysX Integration
+                        </h3>
+
+                        <p>
+                            The engine uses NVIDIA-PhysX as it’s physics engine. The engine provides an abstracted and easy to use Interface for the Physics object to work.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/1onBPMX91P4"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Softbody 1.0
+                        </h3>
+
+                        <p>
+                            Softbody is another beautiful technical aspect in a video game. Right from cloth simulation to chain simulation and Jello simulation, the concept of Softbody is always upgrading and developing. In this Video you can see 3 different types of softbodies. You can see my Cloth simulation acting with the collision and you can see the chain simulation which is the big ball attached to a chain. and some cubes for the Jello simulation. The idea behind Softbody is using Verlet Intergration.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/Wzai0xD6ois"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Space Marines Flag Simulation
+                        </h3>
+
+                        <p>
+                            This project is done for an exam, the flag is basically using cloth simulation. but I'm able to create a method to control the points to make it disconnect and connect whenever I want. and reset the whole flag simulation if the flag flies into oblivion
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="engine-intro"
+               style="margin-top:30px;">
+                The Physics side of my engine is pretty interesting because at the earlier stage of development I created my own physics library that allows me to detect collisions inside an AABB, Sphere and Mesh. Moreover my engine can handle BVH (Bounding Volume Hierarchy) Collision to optimize the collision detection over complex meshes like big city models etc. My engine can handle Softbody Techniques for Cloth simulation, Chain Simulation and Jello Simulation. To Make my collision even better I integrated NVIDIA PhysX Library into my engine.
+            </p>
+
+        </div>
+
+
+
+        <!-- OTHER PROJECTS -->
+
+        <div class="tab-content"
+             id="other">
+
+            <div class="technical-grid">
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/2C4Dg_LK8vM"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="technical-card-content">
+
+                        <h3>
+                            OpenGL Animation Framework Using Lua
+                        </h3>
+
+                        <p>
+                            A custom C++/OpenGL animation framework where Lua scripts are used to choreograph a Star Wars space cinematic, controlling objects, camera movements, spawning, timing, and animation sequences.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/1mZ-B_x95t4"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            C++ Media Player
+                        </h3>
+
+                        <p>
+                            This is a simple media player made using C++ and integrated FMOD library to access all FMOD functionalities. Honestly after seeing a sound play in my engine it made me happy and exciting.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/0zrxZA51g_o"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            3D Audio using FMOD
+                        </h3>
+
+                        <p>
+                            This is the Advanced version of my FMOD integration, I used the FMOD 3D audio loading and playing to create a 3D listener in my world and added sound damping when the listener gets behind walls.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/ulDLE0fHt5w"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Simple TCP Chat System
+                        </h3>
+
+                        <p>
+                            This is a simple chat system made using C++ I made a TCP server and client and used threading to put all the clients in a separate thread and allow them to connect in the server and create a room to chat with their buddies inside the room
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/Np4tT3dlaGI"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            AI Flocking
+                        </h3>
+
+                        <p>
+                            This is just a simple AI flocking technique using C++ achieved in my engine.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="technical-card">
+
+                    <div class="engine-item-video">
+                        <iframe src="https://www.youtube-nocookie.com/embed/aVx7vO7jfsE"
+                                title="Off Screen Rendering video"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen></iframe>
+                    </div>
+
+                    <div class="technical-card-content">
+
+                        <h3>
+                            Unity like Particle System
+                        </h3>
+
+                        <p>
+                            This is just a part of my engine I'm proud of because I tried to create something like Unity Engine's particle system and achieved most of the properties from Unity.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+
+            </div>
+
+
+            <p class="engine-intro"
+               style="margin-top:30px;">
+                These are some projects that I made as part of my academics. It really helped me to understand what a game engine can achieve.
+            </p>
+
+        </div>
+
+    </div>
+
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

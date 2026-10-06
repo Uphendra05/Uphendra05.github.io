@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Uphendhra Nagarajan — Game Programmer</title>
+
+
+  <!-- =====================================================
+       FONTS
+  ====================================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- =====================================================
+       FONT AWESOME
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+
+  <canvas class="binary-rain left" aria-hidden="true"></canvas>
+  <canvas class="binary-rain right" aria-hidden="true"></canvas>
+
+
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+  <header class="navbar">
+
+    <div class="container nav-inner">
+
+      <a class="brand" href="#home" aria-label="Upi"><span style="--i:0">U</span><span style="--i:1">p</span><span style="--i:2">i</span><span class="brand-dot" style="--i:3">.</span></a>
+
+      <button
+        class="mobile-menu"
+        id="mobileMenu"
+        aria-label="Open navigation"
+      >
+        ☰
+      </button>
+
+
+      <nav
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#projects">
+          Games
+        </a>
+
+        <a href="#engine">
+          Custom Engine
+        </a>
+
+        <a href="blog.html">
+          Blog
+        </a>
+
+
+        <a href="#contact">
+          Contact
+        </a>
+
+        <a
+          href="#"
+          class="resume-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <main>
+
+      <section class="hero"
+               id="home">
+
+          <!-- HERO VIDEO: replace the placeholder below with your video.
+        1) Delete the <div class="hero-video-placeholder"> line.
+        2) Uncomment the <video> tag and set your file path. -->
+
+          <div class="hero-video">
+
+
+              <video src="assets/BackgroundVideo.mp4"
+                     autoplay
+                     muted
+                     loop
+                     playsinline></video>
+
+
+
+
+          </div>
+
+          <div class="container">
+
+              <div class="hero-content reveal">
+
+                  <h1 class="hero-name">
+                      Uphendhra Nagarajan
+                  </h1>
+
+
+                  <div class="hero-role">
+                      GAME PROGRAMMER
+                  </div>
+
+
+                  <p class="hero-description">
+                      ""Let the beauty of what you love be what you do""
+                  </p>
+
+
+
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+      <section class="about"
+               id="about">
+
+          <div class="container">
+
+              <div class="about-layout reveal">
+
+                  <div class="about-photo-wrap">
+
+                      <div class="about-photo-frame">
+
+                          <img src="assets/Me.jpeg"
+                               alt="Uphendhra Nagarajan"
+                               class="about-photo">
+
+                      </div>
+
+                  </div>
+
+
+                  <div class="about-content">
+
+                      <div class="section-label">
+                          About
+                      </div>
+
+
+                      <h2 class="section-title">
+                          Building games through code & creativity.
+                      </h2>
+
+
+                      <p class="about-text">
+
+
+                          Howdy! I'm Uphendhra Nagarajan, a <strong> Game Programmer </strong> with a deep love for game development and a versatile skill set.
+                          I've been making games right from my teenage. I compete in game jams and make personal projects and try to acquire knowledge every time I develop a game.
+                          Graduated from Fanshawe College, Canada in Game Development and Software Testing.
+                          Alongside gameplay and systems programming, I developed a strong focus on <strong> Graphics Programming  </strong>, enhancing my ability to create advanced rendering techniques and visually compelling game experiences.
+                      </p>
+                      <br>
+                      <p class="about-text">
+                          Here you can see some of the projects I've made as a College Project and out of curiosity.
+                          I have a strong perseverance for learning new things and taking on challenges, and one of my favorite part in game development is <strong> Level Design  </strong> as it allows me to achieve the creative vision I have for games and allows me to design surreal levels.
+                          I've always been extremely curious in the technical side of games, and sometimes this curiosity has led me to projects I won't be able to formally mention here.
+
+                      </p>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+         TECH STACK
+    ====================================================== -->
+
+      <section class="tech-stack">
+
+          <div class="container">
+
+              <div class="reveal">
+
+                  <div class="section-label">
+                      Tech Stack
+                  </div>
+
+                  <h2 class="section-title">
+                      Tools & Technologies
+                  </h2>
+
+                  <p class="tech-intro">
+                      Technologies and tools used across gameplay,
+                      graphics, engine programming, and interactive
+                      game development.
+                  </p>
+
+              </div>
+
+              <div class="hex-grid reveal" id="hexGrid" aria-label="Tools and technologies"></div>
+
+          </div>
+
+      </section>
+
+
+
+      <!-- =====================================================
+         UNITY PROJECTS  0VGvbofPkG4
+    ====================================================== -->
+
+      <section class="projects"
+               id="projects">
+          <div class="container">
+              <div class="reveal">
+                  <div class="section-label">
+                      GAMES
+                  </div>
+                  <h2 class="section-title">
+                      Unity Projects
+                  </h2>
+              </div>
+              <div class="project-grid compact">
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/0VGvbofPkG4" title="tps melee" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+                      <div class="project-info">
+
+                          <h3 class="project-title">
+                              Third Person Melee Combat
+                          </h3>
+                          <p class="project-description">
+                              Modular third-person melee combat built around a single animator state.
+                          </p>
+                          <a class="read-more" href="tps-melee-combat.html" aria-label="Learn more about Third Person Melee Combat"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </div>
+
+                  </article>
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/xoy1De7newI" title="Resurgence video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+                      <div class="project-info">
+
+                          <h3 class="project-title">
+                              Resurgence
+                          </h3>
+                          <p class="project-description">
+                              Game-jam project exploring gameplay programming, shaders and level design.
+                          </p>
+                          <a class="read-more" href="https://uphendra.itch.io/resurgence" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Resurgence"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </div>
+
+                  </article>
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/5V2EAg-SlyE" title="PO-P-rotect video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+                      <div class="project-info">
+
+                          <h3 class="project-title">
+                              PO-P-rotect
+                          </h3>
+                          <p class="project-description">
+                              Gameplay project with interaction systems, shop mechanics and physics-based movement.
+                          </p>
+                          <a class="read-more" href="https://uphendra.itch.io/po-p-rotect" target="_blank" rel="noopener noreferrer" aria-label="Learn more about PO-P-rotect"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </div>
+
+                  </article>
+              </div>
+              <div class="section-cta reveal">
+                  <a class="view-more-btn" href="games.html">View more</a>
+              </div>
+          </div>
+      </section>
+
+
+
+      <!-- =====================================================
+         UNREAL PROJECTS https://youtu.be/606qp5HEIyQ
+    ====================================================== -->
+
+      <section class="unreal">
+          <div class="container">
+              <div class="reveal">
+                  <div class="section-label">
+                      GAMES
+                  </div>
+                  <h2 class="section-title">
+                      Unreal Projects
+                  </h2>
+              </div>
+              <div class="project-grid compact">
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/_i9moeodYVg" title="tps melee" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
+                      <div class="project-info">
+
+                          <h3 class="project-title">
+                              Mini Football Multiplayer
+                          </h3>
+                          <p class="project-description">
+                              A physics-based 1v1 multiplayer football game built in Unreal Engine 5.6 using a server-authoritative replication architecture.
+                          </p>
+                          <a class="read-more" href="https://github.com/Uphendra05/Mini-Football" aria-label="Learn more about Unreal Project"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </div>
+
+                  </article>
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/606qp5HEIyQ" title="tps melee" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
+                      <div class="project-info">
+
+                          <h3 class="project-title">
+                              Parry System (WIP)
+                          </h3>
+                          <p class="project-description">
+                              Melee combat system with parry mechanics, combo attacks, and enemy AI built in Unreal Engine 5.6.
+                          </p>
+                          <a class="read-more" href="https://www.youtube.com/watch?v=606qp5HEIyQ" aria-label="Learn more about Unreal Project"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </div>
+
+                  </article>
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/Kib6iJDhJ6o" title="tps melee" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+
+
+                      <div class="project-info">
+
+                          <h3 class="project-title">
+                              Niagara Insects VFX 
+                          </h3>
+                          <p class="project-description">
+                              Niagara visual effects for insects, including procedural movement and interaction with the environment, built in Unreal Engine 5.6.
+                          </p>
+                          <a class="read-more" href="https://www.youtube.com/watch?v=Kib6iJDhJ6o" aria-label="Learn more about Unreal Project"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </div>
+
+                  </article>
+              </div>
+          </div>
+      </section>
+
+
+
+      <!-- =====================================================
+         UBISOFT NEXT (C++ / Ubisoft NEXT API)
+    ====================================================== -->
+
+      <section class="ubisoft" id="ubisoft">
+          <div class="container">
+              <div class="reveal">
+                  <div class="section-label">
+                      Ubisoft NEXT
+                  </div>
+                  <h2 class="section-title">
+                      Putt in the Hole
+                  </h2>
+              </div>
+              <div class="project-grid feature">
+                  <article class="project-card reveal">
+
+                      <div class="project-media"><iframe src="https://www.youtube-nocookie.com/embed/XAbCXq9CrMA" title="Putt in the Hole video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+                      <div class="project-info">
+                          <h3 class="project-title">
+                              Putt in the Hole
+                          </h3>
+                          <div class="tags">
+                              <span class="tag">C++</span>
+                              <span class="tag">Ubisoft NEXT API</span>
+                              <span class="tag">Gameplay</span>
+                          </div>
+                          <p class="project-description">
+                              The main goal is to putt the ball into the hole while earning enough points to complete each level. To boost your score, you can transform into different balls, each with unique abilities. However, every level has a random modifier that makes scoring more challenging. You’ll need to choose the right ball to counter the modifier, maximize your score, and finish the level.
+                          </p>
+                          <a class="view-more-btn"
+                             href="https://github.com/Uphendra05/Ubisoft-NEXT/tree/MiniGolf"
+                             target="_blank"
+                             rel="noopener noreferrer">
+                              View on GitHub &rarr;
+                          </a>
+                      </div>
+
+                  </article>
+              </div>
+          </div>
+      </section>
+
+
+
+      <!-- =====================================================
+         CUSTOM ENGINE
+    ====================================================== -->
+
+      <section class="engine"
+               id="engine">
+          <div class="container">
+              <div class="reveal">
+                  <div class="section-label">
+                      Custom Engine
+                  </div>
+                  <div class="title-row">
+                      <h2 class="section-title">
+                          Ishtar Engine
+                      </h2>
+                      <a class="view-more-btn"
+                         href="https://github.com/Uphendra05/Ishtar-Engine"
+                         target="_blank"
+                         rel="noopener noreferrer">
+                          View on GitHub &rarr;
+                      </a>
+                  </div>
+              </div>
+              <!-- ENGINE ICONS: each "Image" box is a placeholder.
+            Replace <div class="engine-icon-media">Image</div> with:
+            <div class="engine-icon-media"><img src="assets/engine/your-image.png" alt="Feature name"></div> -->
+              <div class="tabs">
+                  <button class="tab-button active" data-tab="graphics">Graphics</button>
+                  <button class="tab-button" data-tab="physics">Physics</button>
+                  <button class="tab-button" data-tab="other">Other Engine Projects</button>
+              </div>
+              <div class="tab-content active" id="graphics">
+                  <div class="engine-icon-grid">
+                      <article class="engine-icon" style="--i:0">
+                          <div class="engine-icon-media"><img src="assets/Off Screen Rendering.png" alt="Feature name"></div>
+                          <h3>Off Screen Rendering</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Off Screen Rendering"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:1">
+                          <div class="engine-icon-media"><img src="assets/Frustrum Culling.png" alt="Feature name"></div>
+                          <h3>Frustrum Culling</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Frustrum Culling"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:2">
+                          <div class="engine-icon-media"><img src="assets/Mesh Instance.png" alt="Feature name"></div>
+                          <h3>Mesh Instancing</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Mesh Instancing"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:3">
+                          <div class="engine-icon-media"><img src="assets/Post Processing.png" alt="Feature name"></div>
+                          <h3>Post Processing</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Post Processing"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:4">
+                          <div class="engine-icon-media"><img src="assets/Level Of Detail.png" alt="Feature name"></div>
+                          <h3>LOD or Level Of Detail</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about LOD or Level Of Detail"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:5">
+                          <div class="engine-icon-media"><img src="assets/Skeletal Animation.png" alt="Feature name"></div>
+                          <h3>Skeletal Animation</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Skeletal Animation"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:6">
+                          <div class="engine-icon-media"><img src="assets/Shadows.png" alt="Feature name"></div>
+                          <h3>Shadows</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Shadows"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:7">
+                          <div class="engine-icon-media"><img src="assets/Interior Mapping.png" alt="Feature name"></div>
+                          <h3>Interior Mapping</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Interior Mapping"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:8">
+                          <div class="engine-icon-media"><img src="assets/Deferred Rendering.png" alt="Feature name"></div>
+                          <h3>Deferred Rendering and Content Browser</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Deferred Rendering and Content Browser"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                  </div>
+              </div>
+              <div class="tab-content" id="physics">
+                  <div class="engine-icon-grid">
+                      <article class="engine-icon" style="--i:0">
+                          <div class="engine-icon-media"><img src="assets/PhysX.png" alt="Feature name"></div>
+                          <h3>PhysX Integration</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about PhysX Integration"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:1">
+                          <div class="engine-icon-media"><img src="assets/SoftBody.png" alt="Feature name"></div>
+                          <h3>Softbody 1.0</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Softbody 1.0"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:2">
+                          <div class="engine-icon-media"><img src="assets/Flag with SoftBody.png" alt="Feature name"></div>
+                          <h3>Space Marine Flag With Softbody</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Softbody 2.0"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                  </div>
+              </div>
+              <div class="tab-content" id="other">
+                  <div class="engine-icon-grid">
+                      <article class="engine-icon" style="--i:0">
+                          <div class="engine-icon-media"><img src="assets/Media Player.png" alt="Feature name"></div>
+
+                          <h3>C++ Media Player</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about C++ Media Player"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:1">
+                          <div class="engine-icon-media"><img src="assets/Fmod.png" alt="Feature name"></div>
+
+                          <h3>3D Audio using FMOD</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about 3D Audio using FMOD"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:2">
+                          <div class="engine-icon-media"><img src="assets/TCP.png" alt="Feature name"></div>
+
+                          <h3>Simple TCP Chat System</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Simple TCP Chat System"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:3">
+                          <div class="engine-icon-media"><img src="assets/AI Flocking.png" alt="Feature name"></div>
+
+                          <h3>AI Flocking</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about AI Flocking"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:4">
+                          <div class="engine-icon-media"><img src="assets/Particle System.png" alt="Feature name"></div>
+
+                          <h3>Unity like Particle System</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about Unity like Particle System"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                      <article class="engine-icon" style="--i:5">
+                          <div class="engine-icon-media"><img src="assets/Lua.png" alt="Feature name"></div>
+
+                          <h3>OpenGL Animation Framework Using Lua</h3>
+                          <a class="read-more" href="#" aria-label="Learn more about OpenGL Animation Framework Using Lua"><span>Learn more <i class="fa-solid fa-arrow-right"></i></span></a>
+                      </article>
+                  </div>
+              </div>
+              <div class="section-cta reveal">
+                  <a class="view-more-btn" href="engine.html">Read the full breakdown</a>
+              </div>
+          </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+      <section class="contact"
+               id="contact">
+
+          <div class="container">
+
+              <div class="contact-box reveal">
+
+                  <div class="section-label">
+                      Contact
+                  </div>
+
+
+                  <h2>
+                      Let's build something great.
+                  </h2>
+
+
+                  <p>
+                      Interested in working together
+                      or discussing game development?
+                      Get in touch.
+                  </p>
+
+                  <div class="social-links">
+
+                      <a href="https://www.linkedin.com/in/uphendra/"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="LinkedIn"
+                         title="LinkedIn">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+
+
+                      <a href="https://github.com/Uphendra05"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="GitHub"
+                         title="GitHub">
+                          <i class="fa-brands fa-github"></i>
+                      </a>
+
+
+                      <a href="https://www.youtube.com/@liljacob332"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="YouTube"
+                         title="YouTube">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a>
+
+
+                      <a href="https://uphendra.itch.io"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         aria-label="itch.io"
+                         title="itch.io">
+                          <i class="fa-brands fa-itch-io"></i>
+                      </a>
+
+                  </div>
+
+                  <br />
+
+                  <a href="mailto:uphendradev@gmail.com"
+                     class="email-link">
+                      uphendradev@gmail.com
+                  </a>
+
+
+
+
+              </div>
+
+          </div>
+
+      </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      © 2026 Uphendhra Nagarajan.
+      All rights reserved.
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
